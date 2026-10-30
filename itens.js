@@ -87,10 +87,10 @@ const ITENS = [
   },
 
   {
-    nome: "Cabeceira estofada",
+    nome: "Cabeceira queen estofada",
     status: "disponivel",
     preco: 250,
-    descricao: "Duas peças em tecido azul. A largura é a do conjunto.",
+    descricao: "Para cama tamanho queen. Duas peças em tecido azul. A largura é a do conjunto.",
     medidas: {
       "Largura": "159,5 cm",
       "Altura": "50 cm",
