@@ -104,6 +104,17 @@ h1 em {
   font-size: .95rem;
 }
 
+[hidden] { display: none !important; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.pickup {
+  border-style: solid;
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--card);
+}
+
 /* ---------- lista ---------- */
 
 .grid {
@@ -189,18 +200,24 @@ h1 em {
 .thumb:hover { opacity: 1; }
 .thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
-.badge {
+/* faixa diagonal "Reservado" no canto da foto */
+.ribbon {
   position: absolute;
-  top: 14px;
-  left: 14px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--ink);
-  color: var(--card);
-  font: 700 .78rem/1 var(--ff-body);
-  letter-spacing: .12em;
+  top: 38px;
+  left: -64px;
+  width: 250px;
+  padding: 11px 0;
+  background: #E3A72F;
+  color: var(--ink);
+  text-align: center;
+  font: 800 1rem/1 var(--ff-body);
+  letter-spacing: .22em;
   text-transform: uppercase;
+  transform: rotate(-45deg);
+  box-shadow: 0 6px 14px rgba(42, 33, 26, .35);
 }
+
+.is-reservado .tag { background: var(--ink); }
 
 .stamp {
   position: absolute;

@@ -24,6 +24,9 @@ const SITE = {
   eyebrow: "Mudança",
   subtitulo: "Estamos de mudança e vendendo estes itens. Todas as medidas estão em centímetros.",
 
+  // Etiqueta escura no topo da página. Apague o texto para escondê-la.
+  retirada: "Retirada em Campinas/SP",
+
   // Número com DDI + DDD, só dígitos. Exemplo: "5519999999999"
   // Enquanto estiver vazio, o botão "Tenho interesse" não aparece.
   whatsapp: "",
@@ -74,7 +77,7 @@ const ITENS = [
   {
     nome: "Mesas de cabeceira",
     quantidade: 2,
-    status: "disponivel",
+    status: "reservado",
     preco: 100,
     precoObs: "cada · as duas por R$ 200",
     descricao: "Madeira clara com frente ripada, uma porta e duas prateleiras internas. Medidas de cada uma.",

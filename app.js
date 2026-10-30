@@ -92,7 +92,7 @@
       class: "stage", type: "button", "aria-label": "Ampliar foto de " + item.nome,
       onclick: function () { lbOpen(fotos.map(foto), idx, item.nome); }
     }, bg, fg,
-      st === "reservado" && el("span", { class: "badge", text: "Reservado" }),
+      st === "reservado" && el("span", { class: "ribbon", text: "Reservado" }),
       st === "vendido" && el("span", { class: "stamp", text: "Vendido" })
     );
 
@@ -187,6 +187,10 @@
   else if (!livres && !reservados) contagem.textContent = "Tudo vendido. Obrigado!";
   else contagem.textContent = livres + " de " + itens.length + " disponíveis" +
     (reservados ? " · " + reservados + (reservados > 1 ? " reservados" : " reservado") : "");
+
+  var retirada = document.getElementById("retirada");
+  retirada.textContent = site.retirada || "";
+  retirada.hidden = !site.retirada;
 
   var grade = document.getElementById("grid");
   itens.forEach(function (it, i) { grade.append(cartao(it, i)); });
