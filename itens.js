@@ -16,6 +16,7 @@
 //  • Textos ficam entre aspas "assim". Para usar aspas dentro do texto, use \"
 //  • Preço é só o número (500), sem R$ e sem ponto
 //  • As medidas aparecem na ordem em que você escrever
+//  • olx: "..." mostra o link "Ver anúncio na OLX" (opcional, pode apagar)
 // ============================================================
 
 const SITE = {
@@ -32,7 +33,7 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-10-30",
+  atualizadoEm: "2026-11-01",
 };
 
 const ITENS = [
@@ -51,6 +52,7 @@ const ITENS = [
       texto: "Ver o modelo na Tok&Stok",
       url: "https://www.tokstok.com.br/rack-2-gavetas-1-40-m-x-46-cm-branco-nozes-win/p",
     },
+    olx: "https://sp.olx.com.br/grande-campinas/moveis/racks-e-paineis/rack-para-tv-tok-stok-win-1-40-m-branco-e-nozes-com-2-gavetas-1549269633",
     fotos: ["rack-1.jpg", "rack-2.jpg"],
   },
 
@@ -71,6 +73,7 @@ const ITENS = [
       "O couro está descascando e precisa de reparo (veja as fotos).",
       "Modelos parecidos, novos, custam cerca de R$ 470 cada.",
     ],
+    olx: "https://sp.olx.com.br/grande-campinas/moveis/bancos-e-cadeiras/2-cadeiras-altas-assento-de-couro-marrom-e-base-de-metal-preto-1549269918",
     fotos: ["cadeiras-1.jpg", "cadeiras-2.jpg"],
   },
 
@@ -104,6 +107,88 @@ const ITENS = [
       texto: "Ver o modelo na Tok&Stok",
       url: "https://www.tokstok.com.br/cabeceira-casal-mescla-azul-escuro-muy/p",
     },
+    olx: "https://sp.olx.com.br/grande-campinas/moveis/camas-e-colchoes/cabeceira-queen-estofada-tok-stok-muy-azul-1549270303",
     fotos: ["cabeceira-1.jpg", "cabeceira-2.jpg"],
+  },
+
+  {
+    nome: "Bike Specialized Diverge A1",
+    status: "disponivel",
+    preco: 4300,
+    descricao: "Bike de estrada (speed) de alumínio com freio a disco, boa para asfalto e cascalho leve. Quadro tamanho 49. Usada, em bom estado, com marcas normais de uso (veja as fotos).",
+    medidas: {
+      "Quadro": "Alumínio, tam. 49",
+      "Garfo": "Carbono",
+      "Grupo": "Shimano Claris, 16v",
+      "Relação": "48/32 · 11-32",
+      "Freios": "A disco (Tektro)",
+      "Rodas": "Axis Sport Disc",
+      "Pneus": "Continental Ultra Sport",
+    },
+    notas: ["Acompanha pedais Shimano SPD (de clip)."],
+    olx: "https://sp.olx.com.br/grande-campinas/ciclismo/bike-specialized-diverge-a1-freio-a-disco-claris-16v-tam-49-1549268809",
+    fotos: [
+      "bike-specialized-1.jpg", "bike-specialized-2.jpg", "bike-specialized-3.jpg",
+      "bike-specialized-4.jpg", "bike-specialized-5.jpg",
+    ],
+  },
+
+  {
+    nome: "Bike speed Cannondale CAAD Optimo 4",
+    status: "disponivel",
+    preco: 4700,
+    descricao: "Bike de estrada (speed) 2021, com menos de 2.000 km rodados, em excelente estado e com todos os componentes originais. Quadro tamanho 58.",
+    medidas: {
+      "Quadro": "Alumínio, tam. 58",
+      "Garfo": "Carbono",
+      "Grupo": "Shimano Claris, 16v",
+      "Relação": "50/34 · 11-30",
+      "Freios": "Promax",
+      "Rodas": "Cannondale RS 3.0",
+      "Pneus": "Schwalbe One",
+    },
+    notas: ["Acompanha pedais Shimano SPD (de clip) e porta-garrafa."],
+    olx: "https://sp.olx.com.br/grande-campinas/ciclismo/bicicleta-speed-cannondale-caad-optimo-4-claris-16v-tam-58-pouco-uso-1549267893",
+    fotos: [
+      "bike-cannondale-1.jpg", "bike-cannondale-2.jpg", "bike-cannondale-3.jpg",
+      "bike-cannondale-4.jpg", "bike-cannondale-5.jpg",
+    ],
+  },
+
+  {
+    nome: "iMac 21,5 pol. (Late 2013) para conserto",
+    status: "disponivel",
+    preco: 700,
+    descricao: "Vendido para conserto ou para aproveitar as peças: a tela está quebrada e ele não tem HD. Placa-mãe, processador, memória, fonte e estrutura estão preservados. Serve para trocar o display e instalar um SSD.",
+    medidas: {
+      "Modelo": "A1418 (EMC 2742)",
+      "Processador": "Intel Core i5 2,9 GHz",
+      "Portas": "4 USB 3.0 · 2 Thunderbolt",
+      "Sem fio": "Wi-Fi e Bluetooth",
+    },
+    notas: ["Tela quebrada e sem HD: vendido no estado.", "Acompanha cabo de força."],
+    olx: "https://sp.olx.com.br/grande-campinas/informatica/computadores-e-desktops/imac-21-5-pol-late-2013-a1418-para-conserto-1498316231",
+    fotos: ["imac-1.jpg", "imac-2.jpg", "imac-3.jpg"],
+  },
+
+  {
+    nome: "Churrasqueira de mesa sem fumaça",
+    status: "disponivel",
+    preco: 250,
+    descricao: "Table Grill original, vermelha, em ótimo estado de funcionamento. Usa carvão e tem ventilação interna que acende rápido e solta pouca fumaça. Boa para apartamento, varanda ou área gourmet.",
+    medidas: {
+      "Combustível": "Carvão",
+      "Voltagem": "Bivolt",
+    },
+    notas: [
+      "A parte externa não esquenta, e ela é compacta e fácil de transportar.",
+      "Acompanha grelha, cesto central para o carvão e aro de proteção.",
+      "Marcas naturais de uso na parte de dentro.",
+    ],
+    olx: "https://sp.olx.com.br/grande-campinas/eletro/fogoes-e-fornos/churrasqueira-sem-fumaca-table-grill-1498310895",
+    fotos: [
+      "churrasqueira-1.jpg", "churrasqueira-2.jpg", "churrasqueira-3.jpg",
+      "churrasqueira-4.jpg", "churrasqueira-5.jpg",
+    ],
   },
 ];

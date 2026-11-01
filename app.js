@@ -141,20 +141,25 @@
       item.precoObs && el("small", { text: nb(item.precoObs) })
     );
 
-    var medidas = item.medidas && Object.keys(item.medidas).length && el("dl", { class: "specs" },
+    var medidas = item.medidas && Object.keys(item.medidas).length > 0 && el("dl", { class: "specs" },
       Object.keys(item.medidas).map(function (k) {
         return el("div", { class: "spec" },
           el("dt", { text: k }), el("span", { class: "dots", "aria-hidden": "true" }), el("dd", { text: item.medidas[k] }));
       })
     );
 
-    var notas = item.notas && item.notas.length && el("ul", { class: "notes" },
+    var notas = item.notas && item.notas.length > 0 && el("ul", { class: "notes" },
       item.notas.map(function (t) { return el("li", { text: nb(t) }); })
     );
 
-    var mais = item.link && item.link.url && el("p", { class: "more" },
-      el("a", { href: item.link.url, target: "_blank", rel: "noopener", text: item.link.texto || "Ver mais" })
-    );
+    var links = [];
+    if (item.link && item.link.url) {
+      links.push(el("a", { href: item.link.url, target: "_blank", rel: "noopener", text: item.link.texto || "Ver mais" }));
+    }
+    if (item.olx) {
+      links.push(el("a", { href: item.olx, target: "_blank", rel: "noopener", text: "Ver anúncio na OLX" }));
+    }
+    var mais = links.length > 0 && el("p", { class: "more" }, links);
 
     var info = el("div", { class: "info" },
       el("div", { class: "top" }, titulo, etiqueta),

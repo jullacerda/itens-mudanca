@@ -335,7 +335,7 @@ h2 {
 .notes li { padding-left: 18px; position: relative; }
 .notes li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
 
-.more { margin: 0; font-size: .95rem; }
+.more { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; font-size: .95rem; }
 
 .cta {
   display: inline-flex;
