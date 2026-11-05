@@ -33,7 +33,7 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-11-01",
+  atualizadoEm: "2026-11-05",
 };
 
 const ITENS = [
@@ -190,5 +190,19 @@ const ITENS = [
       "churrasqueira-1.jpg", "churrasqueira-2.jpg", "churrasqueira-3.jpg",
       "churrasqueira-4.jpg", "churrasqueira-5.jpg",
     ],
+  },
+
+  {
+    nome: "Micro-ondas Brastemp Ative!",
+    status: "disponivel",
+    preco: 250,
+    descricao: "Branco, com painel digital e teclas de preparo rápido: menu dia a dia (carne moída, macarrão, arroz, peixe, legumes e suflê), pipoca, brigadeiro, caneca, descongelar (bovina, frango e prato pronto), adiar preparo e +30 seg, +1 min e +5 min.",
+    medidas: {
+      "Marca": "Brastemp (linha Ative!)",
+      "Cor": "Branco",
+      "Painel": "Digital, com receitas prontas",
+    },
+    notas: ["Um modelo parecido (Brastemp 32 L, branco) custa cerca de R$ 730 novo."],
+    fotos: ["microondas-1.jpg"],
   },
 ];
