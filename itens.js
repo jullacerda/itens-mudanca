@@ -7,6 +7,10 @@
 //                      (ele vai para o fim da lista, com carimbo de VENDIDO)
 //  • Reservou:         status: "reservado"
 //  • Mudou o preço:    edite o número em  preco
+//  • Ordem na página:  os itens mais recentes ficam no topo, pela data
+//                      atualizadoEm de cada item (ano-mês-dia). Item novo ou
+//                      alterado? Ponha a data de hoje nele. Vendidos vão
+//                      sempre para o fim. Mesma data: o último da lista vem antes.
 //  • Novo item:        copie um bloco { ... } inteiro, cole no fim da lista,
 //                      troque os dados e ponha as fotos na pasta  images/
 //  • Remover um item:  apague o bloco { ... } dele
@@ -39,6 +43,7 @@ const SITE = {
 const ITENS = [
   {
     nome: "Rack para TV",
+    atualizadoEm: "2026-10-30",
     status: "disponivel", // "disponivel" | "reservado" | "vendido"
     preco: 500,
     descricao: "Branco, com estrutura de madeira escura e duas gavetas.",
@@ -58,6 +63,7 @@ const ITENS = [
 
   {
     nome: "Cadeiras altas",
+    atualizadoEm: "2026-10-30",
     quantidade: 2,
     status: "disponivel",
     preco: 120,
@@ -79,6 +85,7 @@ const ITENS = [
 
   {
     nome: "Mesas de cabeceira",
+    atualizadoEm: "2026-10-30",
     quantidade: 2,
     status: "reservado",
     preco: 100,
@@ -94,6 +101,7 @@ const ITENS = [
 
   {
     nome: "Cabeceira queen estofada",
+    atualizadoEm: "2026-10-30",
     status: "disponivel",
     preco: 250,
     descricao: "Para cama tamanho queen. Duas peças em tecido azul. A largura é a do conjunto.",
@@ -113,6 +121,7 @@ const ITENS = [
 
   {
     nome: "Bike Specialized Diverge A1",
+    atualizadoEm: "2026-11-01",
     status: "disponivel",
     preco: 4300,
     descricao: "Bike de estrada (speed) de alumínio com freio a disco, boa para asfalto e cascalho leve. Quadro tamanho 49. Usada, em bom estado, com marcas normais de uso (veja as fotos).",
@@ -135,6 +144,7 @@ const ITENS = [
 
   {
     nome: "Bike speed Cannondale CAAD Optimo 4",
+    atualizadoEm: "2026-11-01",
     status: "disponivel",
     preco: 4700,
     descricao: "Bike de estrada (speed) 2021, com menos de 2.000 km rodados, em excelente estado e com todos os componentes originais. Quadro tamanho 58.",
@@ -157,6 +167,7 @@ const ITENS = [
 
   {
     nome: "iMac 21,5 pol. (Late 2013) para conserto",
+    atualizadoEm: "2026-11-01",
     status: "disponivel",
     preco: 700,
     descricao: "Vendido para conserto ou para aproveitar as peças: a tela está quebrada e ele não tem HD. Placa-mãe, processador, memória, fonte e estrutura estão preservados. Serve para trocar o display e instalar um SSD.",
@@ -173,6 +184,7 @@ const ITENS = [
 
   {
     nome: "Churrasqueira de mesa sem fumaça",
+    atualizadoEm: "2026-11-01",
     status: "disponivel",
     preco: 250,
     descricao: "Table Grill original, vermelha, em ótimo estado de funcionamento. Usa carvão e tem ventilação interna que acende rápido e solta pouca fumaça. Boa para apartamento, varanda ou área gourmet.",
@@ -194,6 +206,7 @@ const ITENS = [
 
   {
     nome: "Micro-ondas Brastemp Ative! 30 L",
+    atualizadoEm: "2026-11-05",
     status: "disponivel",
     preco: 200,
     descricao: "Branco, com prato giratório e painel digital com teclas de preparo rápido: receitas prontas (carne moída, macarrão, arroz, peixe, legumes, suflê, pipoca e brigadeiro), descongelar (carne bovina, frango e prato pronto), adiar preparo e +30 seg, +1 min e +5 min.",

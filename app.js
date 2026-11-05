@@ -161,10 +161,14 @@
     }
     var mais = links.length > 0 && el("p", { class: "more" }, links);
 
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(item.atualizadoEm || "");
+    var quando = m && el("p", { class: "when", text: "Atualizado em " +
+      new Date(+m[1], +m[2] - 1, +m[3]).toLocaleDateString("pt-BR", { day: "numeric", month: "long" }) });
+
     var info = el("div", { class: "info" },
       el("div", { class: "top" }, titulo, etiqueta),
       item.descricao && el("p", { class: "desc", text: nb(item.descricao) }),
-      medidas, notas, mais, contato(item, st)
+      medidas, notas, mais, contato(item, st), quando
     );
 
     return el("article", { class: "card is-" + st, style: "--i:" + i }, galeria(item, st, i === 0), info);
@@ -181,8 +185,14 @@
   h1.append(el("em", { text: site.destaque || "à venda" }));
   document.getElementById("lede").textContent = site.subtitulo || "";
 
+  // vendidos no fim; os demais do mais recente para o mais antigo (atualizadoEm do item)
+  function vendido(it) { return status(it) === "vendido" ? 1 : 0; }
+  function dia(it) { return /^\d{4}-\d{2}-\d{2}$/.test(it.atualizadoEm || "") ? it.atualizadoEm : ""; }
   var itens = lista.map(function (it, i) { return { it: it, i: i }; })
-    .sort(function (a, b) { return (ORDEM[status(a.it)] - ORDEM[status(b.it)]) || (a.i - b.i); })
+    .sort(function (a, b) {
+      var da = dia(a.it), db = dia(b.it);
+      return (vendido(a.it) - vendido(b.it)) || (da < db ? 1 : da > db ? -1 : 0) || (b.i - a.i);
+    })
     .map(function (x) { return x.it; });
 
   var livres = itens.filter(function (x) { return status(x) === "disponivel"; }).length;

@@ -337,6 +337,8 @@ h2 {
 
 .more { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; font-size: .95rem; }
 
+.when { margin: 0; font-size: .85rem; color: var(--ink-2); opacity: .8; }
+
 .cta {
   display: inline-flex;
   align-items: center;
