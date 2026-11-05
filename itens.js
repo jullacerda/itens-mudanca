@@ -193,16 +193,23 @@ const ITENS = [
   },
 
   {
-    nome: "Micro-ondas Brastemp Ative!",
+    nome: "Micro-ondas Brastemp Ative! 30 L",
     status: "disponivel",
-    preco: 250,
-    descricao: "Branco, com painel digital e teclas de preparo rápido: menu dia a dia (carne moída, macarrão, arroz, peixe, legumes e suflê), pipoca, brigadeiro, caneca, descongelar (bovina, frango e prato pronto), adiar preparo e +30 seg, +1 min e +5 min.",
+    preco: 200,
+    descricao: "Branco, com prato giratório e painel digital com teclas de preparo rápido: receitas prontas (carne moída, macarrão, arroz, peixe, legumes, suflê, pipoca e brigadeiro), descongelar (carne bovina, frango e prato pronto), adiar preparo e +30 seg, +1 min e +5 min.",
     medidas: {
-      "Marca": "Brastemp (linha Ative!)",
-      "Cor": "Branco",
-      "Painel": "Digital, com receitas prontas",
+      "Modelo": "BMS45B (Ative!)",
+      "Capacidade": "30 L",
+      "Potência": "820 W",
+      "Voltagem": "110 V",
+      "Largura": "53,9 cm",
+      "Altura": "30 cm",
+      "Profundidade": "42 cm",
     },
-    notas: ["Um modelo parecido (Brastemp 32 L, branco) custa cerca de R$ 730 novo."],
+    notas: [
+      "Funciona perfeitamente. Tem cerca de 10 anos de uso.",
+      "Um modelo parecido da Brastemp, novo, custa cerca de R$ 730.",
+    ],
     fotos: ["microondas-1.jpg"],
   },
 ];
