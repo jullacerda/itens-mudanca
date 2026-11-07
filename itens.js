@@ -37,7 +37,7 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-11-05",
+  atualizadoEm: "2026-11-07",
 };
 
 const ITENS = [
@@ -59,28 +59,6 @@ const ITENS = [
     },
     olx: "https://sp.olx.com.br/grande-campinas/moveis/racks-e-paineis/rack-para-tv-tok-stok-win-1-40-m-branco-e-nozes-com-2-gavetas-1549269633",
     fotos: ["rack-1.jpg", "rack-2.jpg"],
-  },
-
-  {
-    nome: "Cadeiras altas",
-    atualizadoEm: "2026-10-30",
-    quantidade: 2,
-    status: "disponivel",
-    preco: 120,
-    precoObs: "cada",
-    descricao: "Assento de couro marrom e base de metal preto. Medidas de cada uma.",
-    medidas: {
-      "Largura": "46,5 cm",
-      "Profundidade": "50 cm",
-      "Altura até o assento": "76 cm",
-      "Altura até o encosto": "101,5 cm",
-    },
-    notas: [
-      "O couro está descascando e precisa de reparo (veja as fotos).",
-      "Modelos parecidos, novos, custam cerca de R$ 470 cada.",
-    ],
-    olx: "https://sp.olx.com.br/grande-campinas/moveis/bancos-e-cadeiras/2-cadeiras-altas-assento-de-couro-marrom-e-base-de-metal-preto-1549269918",
-    fotos: ["cadeiras-1.jpg", "cadeiras-2.jpg"],
   },
 
   {
