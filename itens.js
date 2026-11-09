@@ -37,7 +37,7 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-11-07",
+  atualizadoEm: "2026-11-09",
 };
 
 const ITENS = [
@@ -184,7 +184,7 @@ const ITENS = [
 
   {
     nome: "Micro-ondas Brastemp Ative! 30 L",
-    atualizadoEm: "2026-11-05",
+    atualizadoEm: "2026-11-09",
     status: "disponivel",
     preco: 200,
     descricao: "Branco, com prato giratório e painel digital com teclas de preparo rápido: receitas prontas (carne moída, macarrão, arroz, peixe, legumes, suflê, pipoca e brigadeiro), descongelar (carne bovina, frango e prato pronto), adiar preparo e +30 seg, +1 min e +5 min.",
@@ -201,6 +201,7 @@ const ITENS = [
       "Funciona perfeitamente. Tem cerca de 10 anos de uso.",
       "Um modelo parecido da Brastemp, novo, custa cerca de R$ 730.",
     ],
+    olx: "https://www.olx.com.br/vi/1551419382",
     fotos: ["microondas-1.jpg"],
   },
 ];
