@@ -240,7 +240,7 @@ const ITENS = [
     nome: "Sofá retrátil e reclinável 3 lugares Marathon",
     status: "disponivel",
     atualizadoEm: "2026-11-12",
-    preco: 1100,
+    preco: 1300,
     descricao: "Cinza, em tecido tipo camurça, com assento retrátil e encosto de cabeça reclinável em 5 posições. Usado, com marcas normais de uso e alguns furinhos no tecido dos assentos (veja a foto).",
     medidas: {
       "Largura": "195 cm",
@@ -249,7 +249,7 @@ const ITENS = [
       "Altura do assento": "45 cm",
     },
     notas: [
-      "Modelo da Tok&Stok. Novo, custa R$ 3.099.",
+      "Comprado na Tok&Stok em maio de 2024. Novo, custa R$ 3.099.",
       "Estrutura de madeira maciça. Aguenta até 200 kg.",
       "Alguns furinhos no tecido dos assentos.",
     ],
