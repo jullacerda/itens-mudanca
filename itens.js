@@ -215,6 +215,7 @@ const ITENS = [
       "Capacidade": "8 serviços",
       "Modelo": "Electrolux LE08S",
       "Painel": "Touch, com trava de painel",
+      "Voltagem": "110 V",
     },
     notas: [
       "Modelo já fora de linha. Um modelo parecido, novo, custa de R$ 1.600 a R$ 2.400.",
@@ -232,6 +233,7 @@ const ITENS = [
       "Linha": "Brastemp Ative! (Clean)",
       "Tipo": "Duplex, freezer em cima",
       "Cor": "Branca",
+      "Voltagem": "110 V",
     },
     fotos: ["geladeira-1.jpg", "geladeira-2.jpg"],
   },
