@@ -37,7 +37,7 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-11-09",
+  atualizadoEm: "2026-11-12",
 };
 
 const ITENS = [
@@ -203,5 +203,60 @@ const ITENS = [
     ],
     olx: "https://www.olx.com.br/vi/1551419382",
     fotos: ["microondas-1.jpg"],
+  },
+
+  {
+    nome: "Lava-louças Electrolux 8 serviços",
+    status: "disponivel",
+    atualizadoEm: "2026-11-12",
+    preco: 800,
+    descricao: "Compacta, de bancada, com acabamento cinza metálico e porta de vidro preto com painel touch (Blue Touch). Lava 8 serviços e tem 6 programas: Acquajet, Express 30 min, Delicado, Eco, Normal e Panelas.",
+    medidas: {
+      "Capacidade": "8 serviços",
+      "Modelo": "Electrolux LE08S",
+      "Painel": "Touch, com trava de painel",
+    },
+    notas: [
+      "Modelo já fora de linha. Um modelo parecido, novo, custa de R$ 1.600 a R$ 2.400.",
+    ],
+    fotos: ["lavalouca-1.jpg"],
+  },
+
+  {
+    nome: "Geladeira Brastemp frost free",
+    status: "disponivel",
+    atualizadoEm: "2026-11-12",
+    preco: 1000,
+    descricao: "Branca, duas portas (freezer em cima), frost free, com controle eletrônico de temperatura por fora, sem precisar abrir a porta.",
+    medidas: {
+      "Linha": "Brastemp Ative! (Clean)",
+      "Tipo": "Duplex, freezer em cima",
+      "Cor": "Branca",
+    },
+    fotos: ["geladeira-1.jpg", "geladeira-2.jpg"],
+  },
+
+  {
+    nome: "Sofá retrátil e reclinável 3 lugares Marathon",
+    status: "disponivel",
+    atualizadoEm: "2026-11-12",
+    preco: 1100,
+    descricao: "Cinza, em tecido tipo camurça, com assento retrátil e encosto de cabeça reclinável em 5 posições. Usado, com marcas normais de uso e alguns furinhos no tecido dos assentos (veja a foto).",
+    medidas: {
+      "Largura": "195 cm",
+      "Profundidade": "112 cm fechado · 151 cm aberto",
+      "Altura": "59 cm fechado · 96 cm aberto",
+      "Altura do assento": "45 cm",
+    },
+    notas: [
+      "Modelo da Tok&Stok. Novo, custa R$ 3.099.",
+      "Estrutura de madeira maciça. Aguenta até 200 kg.",
+      "Alguns furinhos no tecido dos assentos.",
+    ],
+    link: {
+      texto: "Ver o modelo na Tok&Stok",
+      url: "https://www.tokstok.com.br/sofa-retratil-3-lugares-cinza-marathon/p",
+    },
+    fotos: ["sofa-1.jpg"],
   },
 ];
