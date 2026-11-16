@@ -37,7 +37,7 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-11-12",
+  atualizadoEm: "2026-11-16",
 };
 
 const ITENS = [
@@ -99,9 +99,9 @@ const ITENS = [
 
   {
     nome: "Bike Specialized Diverge A1",
-    atualizadoEm: "2026-11-01",
+    atualizadoEm: "2026-11-16",
     status: "disponivel",
-    preco: 4300,
+    preco: 4000,
     descricao: "Bike de estrada (speed) de alumínio com freio a disco, boa para asfalto e cascalho leve. Quadro tamanho 49. Usada, em bom estado, com marcas normais de uso (veja as fotos).",
     medidas: {
       "Quadro": "Alumínio, tam. 49",
@@ -122,9 +122,9 @@ const ITENS = [
 
   {
     nome: "Bike speed Cannondale CAAD Optimo 4",
-    atualizadoEm: "2026-11-01",
+    atualizadoEm: "2026-11-16",
     status: "disponivel",
-    preco: 4700,
+    preco: 4200,
     descricao: "Bike de estrada (speed) 2021, com menos de 2.000 km rodados, em excelente estado e com todos os componentes originais. Quadro tamanho 58.",
     medidas: {
       "Quadro": "Alumínio, tam. 58",
@@ -145,9 +145,9 @@ const ITENS = [
 
   {
     nome: "iMac 21,5 pol. (Late 2013) para conserto",
-    atualizadoEm: "2026-11-01",
+    atualizadoEm: "2026-11-16",
     status: "disponivel",
-    preco: 700,
+    preco: 450,
     descricao: "Vendido para conserto ou para aproveitar as peças: a tela está quebrada e ele não tem HD. Placa-mãe, processador, memória, fonte e estrutura estão preservados. Serve para trocar o display e instalar um SSD.",
     medidas: {
       "Modelo": "A1418 (EMC 2742)",
