@@ -62,22 +62,6 @@ const ITENS = [
   },
 
   {
-    nome: "Mesas de cabeceira",
-    atualizadoEm: "2026-10-30",
-    quantidade: 2,
-    status: "reservado",
-    preco: 100,
-    precoObs: "cada · as duas por R$ 200",
-    descricao: "Madeira clara com frente ripada, uma porta e duas prateleiras internas. Medidas de cada uma.",
-    medidas: {
-      "Largura": "35,3 cm",
-      "Altura": "65 cm",
-      "Profundidade": "31,5 cm",
-    },
-    fotos: ["mesas-1.jpg"],
-  },
-
-  {
     nome: "Cabeceira queen estofada",
     atualizadoEm: "2026-10-30",
     status: "disponivel",
