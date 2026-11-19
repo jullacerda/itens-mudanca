@@ -231,8 +231,9 @@ const ITENS = [
     nome: "Sofá retrátil e reclinável 3 lugares Marathon",
     status: "disponivel",
     retiradaApos: "2026-12-18",
-    atualizadoEm: "2026-11-12",
-    preco: 1300,
+    atualizadoEm: "2026-11-19",
+    preco: 800,
+    precoObs: "de R$ 1.300",
     descricao: "Cinza, em tecido tipo camurça, com assento retrátil e encosto de cabeça reclinável em 5 posições. Usado, com marcas normais de uso e alguns furinhos no tecido dos assentos (veja a foto).",
     medidas: {
       "Largura": "195 cm",
