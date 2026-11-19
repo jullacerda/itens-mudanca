@@ -165,8 +165,19 @@
     var quando = m && el("p", { class: "when", text: "Atualizado em " +
       new Date(+m[1], +m[2] - 1, +m[3]).toLocaleDateString("pt-BR", { day: "numeric", month: "long" }) });
 
+    var ra = /^(\d{4})-(\d{2})-(\d{2})$/.exec(item.retiradaApos || "");
+    var apos = null;
+    if (ra && st !== "vendido") {
+      var dataRa = new Date(+ra[1], +ra[2] - 1, +ra[3]);
+      if (dataRa > new Date()) {
+        apos = el("p", { class: "from", text: "Retirada a partir de " +
+          dataRa.toLocaleDateString("pt-BR", { day: "numeric", month: "long" }) });
+      }
+    }
+
     var info = el("div", { class: "info" },
       el("div", { class: "top" }, titulo, etiqueta),
+      apos,
       item.descricao && el("p", { class: "desc", text: nb(item.descricao) }),
       medidas, notas, mais, contato(item, st), quando
     );

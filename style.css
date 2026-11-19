@@ -337,6 +337,17 @@ h2 {
 
 .more { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; font-size: .95rem; }
 
+.from {
+  margin: 0;
+  justify-self: start;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--kraft);
+  color: var(--ink);
+  font-size: .9rem;
+  font-weight: 700;
+}
+
 .when { margin: 0; font-size: .85rem; color: var(--ink-2); opacity: .8; }
 
 .cta {

@@ -6,6 +6,9 @@
 //  • Vendeu um item:   troque  status: "disponivel"  por  status: "vendido"
 //                      (ele vai para o fim da lista, com carimbo de VENDIDO)
 //  • Reservou:         status: "reservado"
+//  • Só sai depois de uma data (ainda em uso): retiradaApos: "2026-12-18"
+//                      mostra "Retirada a partir de 18 de dezembro" no item;
+//                      some sozinho quando a data passa
 //  • Mudou o preço:    edite o número em  preco
 //  • Ordem na página:  os itens mais recentes ficam no topo, pela data
 //                      atualizadoEm de cada item (ano-mês-dia). Item novo ou
@@ -37,14 +40,14 @@ const SITE = {
   whatsapp: "",
 
   // Data da última atualização (ano-mês-dia). Aparece no rodapé.
-  atualizadoEm: "2026-11-16",
+  atualizadoEm: "2026-11-19",
 };
 
 const ITENS = [
   {
     nome: "Rack para TV",
     atualizadoEm: "2026-10-30",
-    status: "disponivel", // "disponivel" | "reservado" | "vendido"
+    status: "reservado", // "disponivel" | "reservado" | "vendido"
     preco: 500,
     descricao: "Branco, com estrutura de madeira escura e duas gavetas.",
     medidas: {
@@ -65,6 +68,7 @@ const ITENS = [
     nome: "Cabeceira queen estofada",
     atualizadoEm: "2026-10-30",
     status: "disponivel",
+    retiradaApos: "2026-12-18",
     preco: 250,
     descricao: "Para cama tamanho queen. Duas peças em tecido azul. A largura é a do conjunto.",
     medidas: {
@@ -130,7 +134,7 @@ const ITENS = [
   {
     nome: "iMac 21,5 pol. (Late 2013) para conserto",
     atualizadoEm: "2026-11-16",
-    status: "disponivel",
+    status: "reservado",
     preco: 450,
     descricao: "Vendido para conserto ou para aproveitar as peças: a tela está quebrada e ele não tem HD. Placa-mãe, processador, memória, fonte e estrutura estão preservados. Serve para trocar o display e instalar um SSD.",
     medidas: {
@@ -210,6 +214,7 @@ const ITENS = [
   {
     nome: "Geladeira Brastemp frost free",
     status: "disponivel",
+    retiradaApos: "2026-12-18",
     atualizadoEm: "2026-11-12",
     preco: 1000,
     descricao: "Branca, duas portas (freezer em cima), frost free, com controle eletrônico de temperatura por fora, sem precisar abrir a porta.",
@@ -225,6 +230,7 @@ const ITENS = [
   {
     nome: "Sofá retrátil e reclinável 3 lugares Marathon",
     status: "disponivel",
+    retiradaApos: "2026-12-18",
     atualizadoEm: "2026-11-12",
     preco: 1300,
     descricao: "Cinza, em tecido tipo camurça, com assento retrátil e encosto de cabeça reclinável em 5 posições. Usado, com marcas normais de uso e alguns furinhos no tecido dos assentos (veja a foto).",
